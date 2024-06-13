@@ -16,6 +16,12 @@ body{
     display:flex;
     align-items: center;
 }
+.canvas{
+    width: 95%;
+    margin: 30px auto;
+    display:flex;
+    align-items:center;
+}
 .center{
     display: block;
     margin-left: auto;
@@ -26,6 +32,9 @@ body{
     max-width: 20%;
     height:auto;
     margin-right: auto;
+}
+.rotate-90{
+    transform: rotate(-90deg);
 }
 nav{
     padding-left: 20px;
