@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "styles.css" rel="stylesheet" type ="text/css">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <meta name = "view-transition" content="same-origin">
+        <script src="SpernersGames.js"></script>
+        
+        <title> Ellis Coldren &#183; Sperner's Lemma</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <img src="images/Logo.png" border="0px" class = "logo" width="">
+            <nav>
+                <ul class = "nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/catherine-ellis-coldren-a003b9196" target="_blank">LinkedIn</a></li>
+                    <li class = "active"><a href="SpernersLemma.html" aria-currint="page">Sperner's Lemma</a></li>
+                    <li><a href="DeRhamCohomology.html">DeRham Cohomology</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <main>
+        
+        <div class = "container">
+        <p>Sperner's Lemma Intro:</p>
+
+        <canvas id="TriangleCanvas" width="500" height="500" style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            var c = document.getElementById("TriangleCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+        </script>
+        </div>
+
+        </main>
+    </body>
+</html>
+
