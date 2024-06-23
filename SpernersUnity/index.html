@@ -6,6 +6,18 @@
     <title>Unity WebGL Player | SpernersLemma</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+    <script src="/Build/UnityLoader.js"></script>
+    <script>
+        var buildUrl = "/Build/BuildDirectory.json";
+        var loaderUrl = buildUrl.replace(".json", ".js");
+        var config = {
+            dataUrl: buildUrl + "/Build/BuildDirectory.data",
+            frameworkUrl: buildUrl + "/Build/BuildDirectory.framework.js",
+            codeUrl: loaderUrl
+        };
+        var loader = new UnityLoader("unityContainer", config);
+    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
