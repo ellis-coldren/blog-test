@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href = "styles.css" rel="stylesheet" type ="text/css">
+        
         <meta charset="utf-8">
         <meta name="viewport" content = "width=device-width, initial-scale=1">
         <meta name = "view-transition" content="same-origin">
@@ -11,8 +12,7 @@
         <header>
         <div class="container">
         <img src="images/Logo.PNG" class = "logo" width="">
-        <nav>
-            
+        <nav id = "nav">
             <ul class = "nav-list">
                 <li class = "active"><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="https://www.linkedin.com/in/catherine-ellis-coldren-a003b9196" target="_blank">LinkedIn</a></li>
@@ -20,9 +20,22 @@
                 <li><a href="DeRhamCohomology.html">DeRham Cohomology</a></li>
                 <li><a href="IMissAndrew.html">For Andrew &#9829;</a></li>
             </ul>
+            
         </nav>
         </div>
         </header>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+              } else {
+                document.getElementById("nav").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script>
         <main>
         <h2>This is my very first website and I'm <b>extremely excited!!</b></h2>
 
@@ -45,5 +58,6 @@
             <li>canteloupe</li>
         </ul>
         </main>
+        
     </body>
 </html>

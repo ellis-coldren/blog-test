@@ -57,6 +57,7 @@ iframe {
 nav{
     padding-left: 20px;
     transition: text-decoration 1s, background-color 1s;
+    transition: top 0.3s;
 }
 .nav-list{
     margin: 0;
