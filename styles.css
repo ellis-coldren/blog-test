@@ -3,7 +3,7 @@
     --navbarbg: rgb(164, 0, 64);
   }
 body{
-    margin:0;
+    margin:50px;
     background: var(--bg);
     font-weight: 300;
     gap:2rem;
@@ -127,3 +127,15 @@ nav{
 header{
     background: rgb(164, 0, 64);
 }
+.fraction {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; 
+  }
+  .numerator {
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+  .denominator {
+    text-align: center;
+  }
