@@ -6,7 +6,7 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1">
         <meta name = "view-transition" content="same-origin">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <title> Ellis Coldren &#183; Sperner's Lemma</title>
     </head>
     <body>
@@ -70,11 +70,11 @@
         <br>
         To prove this, we need to show that we will always be able to find such a point. First, subdivide the barycentric triangle. Then, color it as follows:
         <ul>
-            <li>If x' \(\lt\) x, color the vertex majenta</li>
+            <li>If x' \(\lt\) x, color the vertex magenta</li>
             <li>If x'\(\geq\)x and y'\( \lt \)y, color the vertex blue</li>
             <li>If x'\(\geq\)x and y'\(\geq\)y and z' \(\lt\) z, color the vertex green</li>
         </ul>
-        Consider the vertices (1, 0, 0), (0, 1, 0), and (0, 0, 1). Unless any of these points are themselves fixed points(in which case we are done), they must be colored majenta, blue, and green respectively. Then, along the bottom edge, z will always be 0, so the vertices of a subdivision must be colored majenta or blue. Similarly for the other edges. Therefore, this generates a coloring that satisfies the conditions of Sperner's Lemma. So, there must be some rainbow triangle in the middle.
+        Consider the vertices (1, 0, 0), (0, 1, 0), and (0, 0, 1). Unless any of these points are themselves fixed points(in which case we are done), they must be colored magenta, blue, and green respectively. Then, along the bottom edge, z will always be 0, so the vertices of a subdivision must be colored magenta or blue. Similarly for the other edges. Therefore, this generates a coloring that satisfies the conditions of Sperner's Lemma. So, there must be some rainbow triangle in the middle.
         <br>
         <br>
         Next, subdivide the triangle further, and color it again. You will find another rainbow triangle.
@@ -83,10 +83,10 @@
         We can continue subdividing and subdividing, and we can keep track of a raindbow triangle at each subdivision. 
         <br>
         <br>
-        As we subdivide the triangle further and further, until the area of the triangles in the subdivision approach 0, consider only the majenta vertices. They form a sequence of points for which x' < x. Because we have an infinite sequence of points within a compact domain, we can use Bolzano-Weirstrass's Theorem to conclude that there is a subset of these majenta points that converge. Similarly, there is a sequence of blue points that converge, and a sequence of green points that converge. Since the size of the triangles in our subdivision approach 0, the limits of all of these sequences must be the same, so they all must converge to a point P = \((p_x, p_y, p_j)\). 
+        As we subdivide the triangle further and further, until the area of the triangles in the subdivision approach 0, consider only the magenta vertices. They form a sequence of points for which x' < x. Because we have an infinite sequence of points within a compact domain, we can use Bolzano-Weirstrass's Theorem to conclude that there is a subset of these magenta points that converge. Similarly, there is a sequence of blue points that converge, and a sequence of green points that converge. Since the size of the triangles in our subdivision approach 0, the limits of all of these sequences must be the same, so they all must converge to a point P = \((p_x, p_y, p_j)\). 
         <br>
         <br>
-        Because we know that our function f is continuous, the fact that x' < x at each majenta point, and the majenta points converge to P, we can say that \(f(p_x) \leq p_x\). Similarly, \(f(p_y) \leq p_y\) and \(f(p_z) \leq p_z\). Since \(p_x + p_y + p_z = f(p_x) + f(p_y) + f(p_z) = 1\), we can conclude that \(f(p_x) = p_x, f(p_y) = p_y, \text{and} f(p_z) = p_z\). Therefore, \(f(P) = P\), and we have found our fixed point!
+        Because we know that our function f is continuous, the fact that x' < x at each magenta point, and the magenta points converge to P, we can say that \(f(p_x) \leq p_x\). Similarly, \(f(p_y) \leq p_y\) and \(f(p_z) \leq p_z\). Since \(p_x + p_y + p_z = f(p_x) + f(p_y) + f(p_z) = 1\), we can conclude that \(f(p_x) = p_x, f(p_y) = p_y, \text{and} f(p_z) = p_z\). Therefore, \(f(P) = P\), and we have found our fixed point!
         </p>
     </body>
 </html>
