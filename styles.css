@@ -54,6 +54,9 @@ iframe {
 .rotate-90{
     transform: rotate(-90deg);
 }
+.pdf{
+    overflow-y: hidden;
+}
 nav{
     padding-left: 20px;
     transition: text-decoration 1s, background-color 1s;

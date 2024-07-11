@@ -7,16 +7,6 @@
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link href = "styles.css" rel="stylesheet" type ="text/css">
         <title> Ellis Coldren &#183; DeRham Cohomology</title>
-        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-        <style>
-            #pdf-container {
-                width: 100%;
-                overflow-y: auto;
-            }
-            .pdf-page {
-                margin-bottom: 10px;
-            }
-        </style>
 
     </head>
     <body>
@@ -38,43 +28,10 @@
         <p class ="Summary">
             Swag &#183; Legit &#183; Epic
         </p>
-        \(\)
         <p>This expository paper was written for completion of my degree. It gives the background and proof of de Rham's theorem.</p>
-        
+        <p><iframe class="pdf" src="Coldren_deRhamPaper_final.pdf"></iframe>
+        </p>
 
-        <div id="pdf-container"></div>
-        <script>
-            const url = 'Coldren_deRhamPaper_final.pdf'; 
-
-            const pdfjsLib = window['pdfjs-dist/build/pdf'];
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-
-            const pdfContainer = document.getElementById('pdf-container');
-
-            pdfjsLib.getDocument(url).promise.then(function(pdf) {
-                for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-                    pdf.getPage(pageNumber).then(function(page) {
-                        const scale = 1.5;
-                        const viewport = page.getViewport({ scale: scale });
-
-                        const canvas = document.createElement('canvas');
-                        const context = canvas.getContext('2d');
-                        canvas.height = viewport.height;
-                        canvas.width = viewport.width;
-
-                        page.render({
-                            canvasContext: context,
-                            viewport: viewport
-                        }).promise.then(function() {
-                            const img = document.createElement('img');
-                            img.src = canvas.toDataURL();
-                            img.classList.add('pdf-page');
-                            pdfContainer.appendChild(img);
-                        });
-                    });
-                }
-            });
-        </script>
         </main>
         <script src="Navbarscroll.js"></script>
     </body>
