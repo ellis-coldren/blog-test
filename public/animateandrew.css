@@ -1,0 +1,108 @@
+section{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background: radial-gradient(rgb(206, 201, 207), rgb(106, 103, 107));
+   overflow: hidden;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+section h2{
+    color:rgb(164, 0, 64);
+    font-size: 8mm;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+section .set{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+section .set div{
+    position: absolute;
+    display:block;
+}
+section .set div:nth-child(1){
+    left:15%;
+    top:20%;
+    animation: animate 28s linear infinite;
+    animation-delay: -5s;
+}
+section .set div:nth-child(2){
+    left:85%;
+    top:25%;
+    animation: animate 30s linear infinite;
+    animation-delay: -3s;
+}
+section .set div:nth-child(3){
+    left:25%;
+    top:20%;
+    animation: animate 25s linear infinite;
+    animation-delay: 0s;
+}
+section .set div:nth-child(4){
+    left:75%;
+    top:75%;
+    animation: animate 23s linear infinite;
+    animation-delay: -3s;
+}
+section .set div:nth-child(5){
+    left:35%;
+    animation: animate 30s linear infinite;
+    animation-delay: -8s;
+}
+section .set div:nth-child(6){
+    left:65%;
+    animation: animate 35s linear infinite;
+}
+section .set div:nth-child(7){
+    left:50%;
+    animation: animate 25s linear infinite;
+    animation-delay: -8s;
+}
+@keyframes animate {
+    0% { 
+        transform: translate(-200% 110vh) rotateZ(0deg);
+        opacity: 1;
+      }
+    12.5% { 
+        transform: translate(120vw, -120%) rotateZ(20deg);
+      }
+    25%{
+        transform: translate(-200%, 50vh) scale(1.75) rotateZ(-20deg);
+    }
+    37.5%{
+        transform: translate(-200%, -120%) rotateZ(-40deg);
+        opacity: 0.75;
+
+    }
+    50%{
+        transform: translate(100vw, 50vh) rotateZ(0deg);
+    }
+    62.5%{
+        transform: translate(20vw, 100vh) rotateZ(20deg);
+
+    }
+    75%{
+        transform: translate(200%, 100vh) rotateZ(20deg);
+        opacity: 1;
+
+    }
+    87.5%{
+        transform: translate(50vw, -200%) scale(1.75) rotateZ(20deg);
+
+    }
+    100%{
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        opacity: 0.75;
+
+    }
+  }
