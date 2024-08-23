@@ -2,49 +2,39 @@
     --bg: rgb(206, 201, 207);
     --navbarbg: rgb(164, 0, 64);
   }
-body{
-    margin:50px;
-    background: var(--bg);
-    font-weight: 300;
-    gap:2rem;
-    min-height: 200vh;
-}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+  }
 header {
-    position: fixed;
+    background: rgb(164, 0, 64);
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
-    padding: 10px 0; 
+    height: 7vh;
+    padding: 1vh 1vh; 
 }
 main {
-    margin-top: 120px; 
-    padding: 20px;
+    height: calc(93vh-20px);
+    overflow-y: hidden;
+    overflow-x:hidden;
 }
 iframe {
     display: block;
-    width: 80%;
-    height: 600px; 
+    width: 100%;
+    height:100%;
     border: none; 
-}
-
-.container{
-    width: 95%;
-    margin: 0 auto;
-    display:flex;
-    align-items: center;
-}
-.canvas{
-    width: 95%;
-    margin: 30px auto;
-    display:flex;
-    align-items:center;
+    overflow: hidden;
 }
 .center{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: auto;
+    max-width:80%;
+    height: auto;
 }
 .logo {
     max-width: 20%;
@@ -58,17 +48,16 @@ iframe {
     overflow-y: hidden;
 }
 nav{
-    padding-left: 20px;
     transition: text-decoration 1s, background-color 1s;
     transition: top 0.3s;
+    display:flex;
+    align-items:center;
 }
 .nav-list{
     margin: 0;
-    padding: 15px 0;
+    margin-right: 3vh;
     list-style:none;
-    gap: 2rem;
-    padding-block:2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .nav-list li{
     background: var(--navbarbg);
@@ -85,51 +74,20 @@ nav{
     color: var(--navbarbg);   
 }
 .nav-list a{
-    display:inline-block;
+    display: inline-block;
     color: white;
     text-decoration:underline var(--navbarbg);
     text-align: center;
     border-radius: 100vw 100vw 100vw 100vw;
     transition: text-decoration-color 1s, background-color 1s;
-    padding: 0.5rem 0.75rem;
-    
+    padding: 0.3rem 0.75rem;
 }
 .nav-list a:hover{
     color: var(--navbarbg);
     text-decoration-color: var(--navbarbg);
-    border-radius: 100vw 100vw 100vw 100vw;
     background-color: var(--bg);
 }
 
-
-
-.navbarbutton {
-    background-color: rgb(201, 199, 199);
-    color: rgb(10, 20, 73);
-    border: none;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.75s, box-shadow 0.25s;
-    
-}
-
-.navbarbutton:hover{
-    background-color: rgb(125, 153, 230);
-    box-shadow: 3px 3px 3px rgb(141, 3, 99);
-    
-}
-
-.navbarbutton:active {
-    opacity: 0.7;
-}
-header{
-    background: rgb(164, 0, 64);
-}
 .fraction {
     position: relative;
     display: inline-block;
@@ -142,3 +100,24 @@ header{
   .denominator {
     text-align: center;
   }
+
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    overflow:hidden;
+    height:90vh
+}
+  
+.left-side{
+    flex: 1; 
+    position: sticky;
+    height: 90vh;
+    background-color: #f0f0f0; 
+}
+.right-side{
+    flex: 1;
+    padding-left:2vh;
+    overflow-y: auto;
+    height:90vh;
+}
