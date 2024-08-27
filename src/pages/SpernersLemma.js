@@ -12,7 +12,7 @@ function SpernersLemma() {
         <main>
         <div className = 'container'>
             <div className = 'left-side'>
-            <iframe src="../SpernersUnity/index.html" scrolling="no"/>
+            <iframe src="../SpernersUnity/index.html" />
             </div>
             <div className = 'right-side'>
             <h2>Sperner's Lemma Intro:</h2>

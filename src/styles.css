@@ -1,13 +1,16 @@
 :root {
-    --bg: rgb(206, 201, 207);
+    --bg: rgb(77, 75, 78);
+    --buttonbg: rgb(206, 201, 207);
     --navbarbg: rgb(164, 0, 64);
   }
 
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 99%;
     height: 100%;
+    background: var(--bg);
+    
 
   }
 header {
@@ -16,19 +19,26 @@ header {
     left: 0;
     width: 100%;
     height: 7vh;
-    padding: 1vh 1vh; 
+    padding: 1vh 2vh; 
 }
 main {
-    height: calc(93vh-20px);
-    overflow-y: hidden;
-    overflow-x:hidden;
+    background: var(--bg);
+    height: calc(92vh-20px);
+    width: 100%;
+    overflow:hidden;
+    padding-left: 2vh;
+    padding-right:1vh;
+    color: var(--buttonbg);
+    justify-content: center;
+    
 }
+
 iframe {
-    display: block;
     width: 100%;
     height:100%;
-    border: none; 
+    border:none;
     overflow: hidden;
+    display: block;
 }
 .center{
     display: block;
@@ -45,13 +55,15 @@ iframe {
     transform: rotate(-90deg);
 }
 .pdf{
-    overflow-y: hidden;
+    height: 100vh;
+    box-sizing: border-box;
 }
 nav{
     transition: text-decoration 1s, background-color 1s;
     transition: top 0.3s;
     display:flex;
     align-items:center;
+    padding-left:3vh;
 }
 .nav-list{
     margin: 0;
@@ -67,10 +79,10 @@ nav{
     border: 2px solid white;
 }
 .nav-list li.active {
-    background: var(--bg);
+    background: var(--buttonbg);
 }
 .nav-list li.active a {
-    text-decoration-color: var(--bg);
+    text-decoration-color: var(--buttonbg);
     color: var(--navbarbg);   
 }
 .nav-list a{
@@ -85,7 +97,7 @@ nav{
 .nav-list a:hover{
     color: var(--navbarbg);
     text-decoration-color: var(--navbarbg);
-    background-color: var(--bg);
+    background-color: var(--buttonbg);
 }
 
 .fraction {
@@ -106,14 +118,13 @@ nav{
     flex-direction: row;
     align-items: center;
     overflow:hidden;
-    height:90vh
+    height:90vh;
 }
   
 .left-side{
     flex: 1; 
     position: sticky;
     height: 90vh;
-    background-color: #f0f0f0; 
 }
 .right-side{
     flex: 1;
@@ -121,3 +132,61 @@ nav{
     overflow-y: auto;
     height:90vh;
 }
+.homepage-row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    overflow:hidden;
+    height:75vh;
+}
+.intro-left{
+    flex: 1; 
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:5vh;
+    overflow: hidden;
+}
+.intro-left img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
+.intro-right{
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    padding:5vh;
+}
+.intro-right img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain;
+    display:block;
+}
+
+.project-item {
+    flex: 1; 
+    max-width: 30%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    padding:5vh;
+    overflow: hidden;
+}
+.project-item img {
+    max-width: 100%; 
+    height: 40%;
+    object-fit: contain;
+    display:block;
+}
+.project-item desc {
+    display:block;
+}
+
+
