@@ -8,6 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 99%;
+    height: 100%;
     background: var(--bg);
     
 
@@ -22,6 +23,7 @@ header {
 }
 main {
     background: var(--bg);
+    height: calc(92vh-20px);
     width: 100%;
     padding-left: 2vh;
     padding-right:1vh;
@@ -34,7 +36,7 @@ iframe {
     width: 100%;
     height:100%;
     border:none;
-    overflow: scroll;
+    overflow: hidden;
     display: block;
 }
 .center{
@@ -114,7 +116,7 @@ nav{
     display:flex;
     flex-direction: row;
     align-items: center;
-    overflow-x:hidden;
+    overflow:hidden;
     height:90vh;
 }
   
@@ -133,7 +135,7 @@ nav{
     display:flex;
     flex-direction: row;
     align-items: center;
-    overflow:scroll;
+    overflow:hidden;
     height:75vh;
 }
 .intro-left{
@@ -143,7 +145,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
     padding:5vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .intro-left img {
     max-width: 100%; 
@@ -174,7 +176,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
     padding:5vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .project-item img {
     max-width: 100%; 
