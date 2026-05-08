@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d881a797.css",
-    "main.js": "/static/js/main.dc0870e3.js",
+    "main.js": "/static/js/main.21631539.js",
     "static/js/453.fb0eb15a.chunk.js": "/static/js/453.fb0eb15a.chunk.js",
     "static/media/tongue.png": "/static/media/tongue.a9d700aaa412ef327f79.png",
     "static/media/imtheboss.png": "/static/media/imtheboss.e8bd01d846deac85507a.png",
@@ -11,7 +11,6 @@
     "static/media/biking.png": "/static/media/biking.e78b496aa16176555069.png",
     "static/media/meandjami.png": "/static/media/meandjami.9bc245f729aa689c3ee1.png",
     "static/media/Coldren_deRhamPaper_final.pdf": "/static/media/Coldren_deRhamPaper_final.4f3d8b45f5f5c7575378.pdf",
-    "static/media/dogblah.png": "/static/media/dogblah.c12efe7b93a51b7fa08d.png",
     "static/media/profilepic2.PNG": "/static/media/profilepic2.9de72882f57681bd1151.PNG",
     "static/media/WNThumbnail.PNG": "/static/media/WNThumbnail.412efd076073119b0fcd.PNG",
     "static/media/DCThumbnail.PNG": "/static/media/DCThumbnail.43ba263b211f2630e413.PNG",
@@ -20,11 +19,11 @@
     "static/media/Logo.PNG": "/static/media/Logo.381f40388a6b70e4425c.PNG",
     "index.html": "/index.html",
     "main.d881a797.css.map": "/static/css/main.d881a797.css.map",
-    "main.dc0870e3.js.map": "/static/js/main.dc0870e3.js.map",
+    "main.21631539.js.map": "/static/js/main.21631539.js.map",
     "453.fb0eb15a.chunk.js.map": "/static/js/453.fb0eb15a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d881a797.css",
-    "static/js/main.dc0870e3.js"
+    "static/js/main.21631539.js"
   ]
 }
