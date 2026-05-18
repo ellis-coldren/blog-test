@@ -187,5 +187,32 @@ nav{
 .project-item desc {
     display:block;
 }
-
+@media (max-width: 768px) {
+    .homepage-row {
+      flex-direction: column;
+      height: auto;
+      overflow: visible;
+    }
+  
+    .intro-left {
+      max-width: 100%;
+      padding: 2vh;
+    }
+  
+    .intro-right {
+      max-width: 100%;
+      padding: 2vh;
+    }
+  
+    .project-item {
+      max-width: 100%;
+      padding: 2vh;
+      width: 100%;
+    }
+  
+    main {
+      padding-left: 1vh;
+      padding-right: 1vh;
+    }
+  }
 
